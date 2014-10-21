@@ -1,0 +1,6 @@
+{{#each}}
+  {{#liquid-unless isDeleted class="box"}}
+    <h1>{{name}}</h1>
+    <button {{action "remove" this}}>remove</button>
+  {{/liquid-unless}}
+{{/each}}
