@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import { boxCrossFade } from '../timings'
 
 export default Ember.ArrayController.extend({
   actions: {
@@ -6,7 +7,7 @@ export default Ember.ArrayController.extend({
       Ember.set(model, 'isDeleted', true);
       Ember.run.later(this, function() {
         this.removeObject(model);
-      }, 501);
+      }, boxCrossFade);
     }
   }
 });
