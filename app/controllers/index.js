@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { boxCrossFade } from '../timings'
+import { boxCrossFade } from '../timings';
 
 export default Ember.ArrayController.extend({
   actions: {
