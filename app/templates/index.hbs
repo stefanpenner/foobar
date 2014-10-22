@@ -1,5 +1,6 @@
 {{#each}}
-  {{#liquid-unless isDeleted class="box"}}
+  {{!- I added the growDuration just to make it more obvious that the fade is in fact happening. Tweak as desired. -}}
+  {{#liquid-unless isDeleted class="box" growDuration=1000}}
     <h1>{{name}}</h1>
     <button {{action "remove" this}}>remove</button>
   {{/liquid-unless}}
