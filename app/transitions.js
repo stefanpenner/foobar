@@ -4,9 +4,7 @@ export default function() {
   this.transition(
     this.toModel(true),
     this.hasClass('menu'),
-    this.use('toLeft',{
-      duration: 200
-    }),
+    this.use('slide-in'),
     this.reverse('toRight', {
       duration: 200
     })
