@@ -3,7 +3,22 @@ html, body {
 }
 
 .menu {
-  height: 100px;
+  position: absolute;
+  z-index: 1;
 }
 
+.menu .inner-menu {
+  background: blue;
+}
+
+.menu .liquid-child {
+  /*position: relative; */
+}
+
+.box > div{
+  display: block;
+  background: gray;
+  width: 100px;
+  height: 100px;
+}
 
